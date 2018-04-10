@@ -1,0 +1,19 @@
+// MySQL Data Table
+CREATE TABLE IF NOT EXISTS `test_site`.`jsondata` (
+`id` INT(11) NOT NULL ,
+`name` VARCHAR(50) NOT NULL ,
+`gender` VARCHAR(6) NOT NULL ,
+`street` VARCHAR(255) NOT NULL ,
+`city` VARCHAR(100) NOT NULL ,
+`state` VARCHAR(50) NOT NULL ,
+`email` VARCHAR(255) NOT NULL ,
+`phone` VARCHAR(15) NOT NULL ,
+PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+
+INSERT INTO `jsondata` (`id`, `name`, `gender`, `street`, `city`, `state`, `email`, `phone`) VALUES
+(1, 'Teddy', 'Male', '20 Sagamore Hill', 'Oyster Bay', 'New York', 'ted@squaredeal.com', '7037802000'),
+(2, 'Martha', 'Female', '3200 Mount Vernon', 'Mount Vernon', 'Virginia', 'martha@cherrytree.org', '5169224788'),
+(3, 'Madison', 'Male', '1350 Constitution Hwy', 'Montpelier', 'Virginia', 'madison@rightsbill.com', '5406722728'),
+(4, 'Lady Bird', 'Female', '199 Park Road', 'Stone Hill', 'Texas', 'claudia@greatsociety.org', '8306442252'),
+(5, 'Bess', 'Female', '219 N Delaware St', 'Independence', 'Missouri', 'elizabeth@buckstops.com', '8162542720'),
+(6, 'Andrew', 'Male', '4580 Rachels Ln', 'Nashville', 'Tennessee', 'thegeneral@hermitage.org', '6158892941');
